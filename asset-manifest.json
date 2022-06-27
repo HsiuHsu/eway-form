@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/eway-form/static/css/main.520ab7e5.css",
+    "main.js": "/eway-form/static/js/main.15f824ac.js",
+    "static/js/787.5e71d769.chunk.js": "/eway-form/static/js/787.5e71d769.chunk.js",
+    "static/media/抽獎沙子.svg": "/eway-form/static/media/抽獎沙子.1d981b462c808fd4417b.svg",
+    "static/media/cactus.svg": "/eway-form/static/media/cactus.dbaa71178376ea8db2f9d6cf26378c1b.svg",
+    "static/media/烏龜.svg": "/eway-form/static/media/烏龜.e6b55cabba9db1c9eaf39b2cdbab07c2.svg",
+    "static/media/marketItem-3.svg": "/eway-form/static/media/marketItem-3.8bc09fa845644387f91cb0336412a97a.svg",
+    "static/media/marketItem-1.svg": "/eway-form/static/media/marketItem-1.ae1226828c7f8329b0527240a55f3c16.svg",
+    "static/media/certificateA.svg": "/eway-form/static/media/certificateA.d8117d60c6f24321d9da.svg",
+    "static/media/marketItem-4.svg": "/eway-form/static/media/marketItem-4.77259b10487f560ba1f28b8ca0f33c9d.svg",
+    "static/media/certificateD.svg": "/eway-form/static/media/certificateD.96a7ebe909a2b4e710ee.svg",
+    "static/media/sup煙火.svg": "/eway-form/static/media/sup煙火.62ae66dd3f7a2c4f9853ef2a6d0e6ba4.svg",
+    "static/media/sup.svg": "/eway-form/static/media/sup.65256388ac1141683533bec2e6f10caa.svg",
+    "static/media/煙火.svg": "/eway-form/static/media/煙火.70a9ebeb97b731f38a68fca461e05d7a.svg",
+    "static/media/海浪.svg": "/eway-form/static/media/海浪.8be1a0aeea978398a1e041eccf1aa1d7.svg",
+    "static/media/lighthouse.svg": "/eway-form/static/media/lighthouse.fca4f2ccdb3af6d4b67ea6e015931148.svg",
+    "static/media/marketItem-2.svg": "/eway-form/static/media/marketItem-2.33340e2ad5d64c3acb17b0d29450a181.svg",
+    "static/media/marketroof.svg": "/eway-form/static/media/marketroof.3ced8ad898907f4b9596b594828f14d7.svg",
+    "static/media/failure.svg": "/eway-form/static/media/failure.52b20d22fb7ed507775b9b22c6e1692a.svg",
+    "static/media/star.svg": "/eway-form/static/media/star.1ca69603f7e2f1031e49de2b33d2a528.svg",
+    "static/media/白色海浪.svg": "/eway-form/static/media/白色海浪.c01094c590f4c77ba3e1.svg",
+    "index.html": "/eway-form/index.html",
+    "static/media/success.svg": "/eway-form/static/media/success.5416fc596d957fa9af81bf94d2f8a74e.svg",
+    "static/media/drop down.svg": "/eway-form/static/media/drop down.8c01948d8f998415555d.svg",
+    "main.520ab7e5.css.map": "/eway-form/static/css/main.520ab7e5.css.map",
+    "main.15f824ac.js.map": "/eway-form/static/js/main.15f824ac.js.map",
+    "787.5e71d769.chunk.js.map": "/eway-form/static/js/787.5e71d769.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.520ab7e5.css",
+    "static/js/main.15f824ac.js"
+  ]
+}
