@@ -1,5 +1,8 @@
 import React from 'react'
 import cactusImg from '../public/img/svg/cactus.svg'
+import sup from '../public/img/svg/sup.svg'
+import fireSup from '../public/img/svg/sup煙火.svg'
+import fire from '../public/img/svg/煙火.svg'
 
 type ParagraphProps = {
     style: string
@@ -29,6 +32,7 @@ function Information(props: PropsType) {
             </div>
             <button className='default-btn' onClick={props.handleFormBtnClick}>ＦＯＲＭ</button>
             <div className='infos'>
+                <img src={sup} alt='sup' className='supImg' />
                 <ParagraphTitle style='infos-titleGroup' srcImg={cactusImg} title='paragraph' />
                 <ul>
                     <li className='font-body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
@@ -40,6 +44,8 @@ function Information(props: PropsType) {
                     <li className='font-body'>Cras tristique tellus id leo bibendum, eu dapibus nisl accumsan.</li>
                     <li className='font-body'>Donec ultrices sapien <span className='bold'>vitae leo venenatis ullamcorper</span>.</li>
                 </ul>
+                <img src={fireSup} alt='fireSup' className='fireSupImg' />
+                <img src={fire} alt='fire' className='fireImg' />
             </div>
         </div>
     )

@@ -50,3 +50,30 @@
 .container {
   background-color: $palette-primary4;
 }
+
+.waves-move-wrapper {
+  overflow: hidden;
+  transform: translateY(-1px);
+
+  & .waves-move {
+    @include flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    animation: move 10s linear;
+    animation-iteration-count: infinite;
+
+    img {
+      width: 783px;
+    }
+
+    @keyframes move {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(calc(-783px));
+      }
+    }
+  }
+}

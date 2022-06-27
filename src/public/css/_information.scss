@@ -8,7 +8,11 @@
     background-color: $palette-primary1;
     padding: 60px 24px 52px 24px;
     background-image: url(../img/svg/白色海浪.svg);
-    background-size: 4784px 586px;
+    // background-size: 4784px 586px;
+    // -moz-background-size: 4784px 586px;
+    // -webkit-background-size: 4784px 586px;
+    // -o-background-size: 4784px 586px;
+    // background-size: 4784px 586px;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -43,6 +47,42 @@
     & .infos {
         @include cardStyle(16px 24px, $palette-primary3, 20px) {
             box-sizing: border-box;
+        }
+
+        position: relative;
+
+        &>img {
+            position: absolute;
+        }
+
+        & .supImg {
+            top: -30px;
+            right: 16px;
+        }
+
+        & .fireSupImg {
+            bottom: -50px;
+            left: 38px;
+        }
+
+        & .fireImg {
+            bottom: -52px;
+            left: 11px;
+            animation: zoom 3s ease-in-out;
+            animation-iteration-count: infinite;
+            z-index: 10;
+
+            @keyframes zoom {
+                from {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+
+                to {
+                    opacity: 0.2;
+                    transform: scale(1.5);
+                }
+            }
         }
 
         & .infos-titleGroup {

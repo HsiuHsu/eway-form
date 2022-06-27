@@ -6,6 +6,7 @@ import Form from './components/Form';
 import RaffleGift from './components/RaffleGift';
 import RaffleInfos from './components/RaffleInfos';
 import GoToShop from './components/GoToShop';
+import waves from './public/img/svg/海浪.svg'
 
 function App() {
   const formRef = useRef<HTMLDivElement>(null)
@@ -16,6 +17,17 @@ function App() {
   return (
     <div className='container'>
       <Information handleFormBtnClick={handleFormBtnClick} />
+      <div className='waves-move-wrapper'>
+        <div className='waves-move'>
+          <img src={waves} alt='waves' />
+          <img src={waves} alt='waves' />
+          <img src={waves} alt='waves' />
+          <img src={waves} alt='waves' />
+        </div>
+      </div>
+
+      {/* <img src={waves} alt='waves' /> */}
+      {/* <div style={{ backgroundImage: `url(${waves})` }} /> */}
       <Form formRef={formRef} />
       <RaffleGift />
       <RaffleInfos />
