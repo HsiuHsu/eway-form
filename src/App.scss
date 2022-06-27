@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import './public/css/mixin';
+@import './public/css/variables';
+@import './public/css/reset';
+
+/*component*/
+@import './public/css/information';
+@import './public/css/form';
+@import './public/css/raffleGift';
+@import './public/css/raffleInfos';
+@import './public/css/goToShop';
+
+
+/*font*/
+.font-h4 {
+  @include font(20px, 700, 140%, normal)
+}
+
+.font-h5 {
+  @include font(18px, 700, 125%, normal)
+}
+
+.font-subtitle {
+  @include font(14px, 700, 140%, normal)
+}
+
+.font-body {
+  @include font(16px, 400, 180%, normal)
+}
+
+.font-input {
+  @include font(14px, 400, 150%, normal)
+}
+
+.font-caption {
+  @include font(12px, 400, 140%, normal)
+}
+
+/*button*/
+.default-btn {
+  @include flex;
+  @include font(18px, 700, 125%, 0.2em);
+  // @include button($palette-primary2, 0px 0px 20px rgba(250, 163, 163, 0.91));
+
+  cursor: pointer;
+}
+
+
+/**/
+.container {
+  background-color: $palette-primary4;
+}

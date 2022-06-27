@@ -1,24 +1,25 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Information from './components/Information';
+import Form from './components/Form';
+import RaffleGift from './components/RaffleGift';
+import RaffleInfos from './components/RaffleInfos';
+import GoToShop from './components/GoToShop';
 
 function App() {
+  const formRef = useRef<HTMLDivElement>(null)
+
+  const handleFormBtnClick = () => formRef.current?.scrollIntoView({ behavior: 'smooth' })
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <Information handleFormBtnClick={handleFormBtnClick} />
+      <Form formRef={formRef} />
+      <RaffleGift />
+      <RaffleInfos />
+      <GoToShop />
     </div>
   );
 }

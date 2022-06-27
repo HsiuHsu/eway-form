@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import './mixin';
+@import './variables';
+
+/*raffle infos*/
+.raffle-infos-wrapper {
+    @include flex;
+    padding: 40px 24px;
+    background-color: $palette-primary4;
+
+    & .raffle-infos-title-group {
+        @include flex;
+        // flex-direction: row;
+        margin-bottom: 20px;
+        padding: 0 9px;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 32%;
+            height: 1px;
+            background-color: #204379;
+            left: -49px;
+            transform: rotate(72deg);
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 32%;
+            height: 1px;
+            background-color: #204379;
+            right: -49px;
+            transform: rotate(-72deg);
+        }
+
+        & .h4-brown {
+            color: $palette-primary2;
+        }
+
+        & .h4-blue {
+            color: $palette-primary1;
+        }
+    }
+}

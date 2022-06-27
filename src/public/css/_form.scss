@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import './mixin';
+@import './variables';
+
+/*form*/
+.form-wrapper {
+    @include flex;
+    padding: 40px 24px calc(58px - 32px) 24px;
+    background-color: $palette-primary4;
+
+    & .form-titleGroup {
+        @include flex;
+        flex-direction: row;
+        transform: translateX(12px);
+        z-index: 10;
+
+        p {
+            padding: 10px 20px;
+            color: $palette-primary2;
+            background-color: $color-white;
+            border: 2px solid $palette-primary2;
+            border-radius: 50px;
+            @include font(18px, 700, 125%, 0.2em);
+        }
+
+        img {
+            transform: translateX(-24px);
+        }
+    }
+
+    form {
+        @include flex;
+        width: 100%;
+        transform: translateY(-32px);
+
+        & .formItems {
+            @include cardStyle(40px 20px, $color-white, 16px) {
+                gap: 20px;
+                box-shadow: 0px 1px 20px rgba(73, 72, 72, 0.25);
+            }
+
+            div {
+                @include flex;
+                align-items: flex-start;
+                margin-bottom: 20px;
+                position: relative;
+
+                /*others*/
+                label {
+                    color: $palette-primary1;
+                    margin-bottom: 4px;
+
+                    span {
+                        color: $palette-primary2;
+                        margin-left: 4px;
+                    }
+                }
+
+                input,
+                select {
+                    width: 100%;
+                    height: 57px;
+                    padding: 8px 16px;
+                    border-radius: 20px;
+                    // border: 1px solid $palette-primary1;
+
+                    // &:focus {
+                    //     outline: 0;
+                    //     border: 3px solid #93BBF9;
+                    // }
+                }
+
+                & .success {
+                    border: 1px solid $palette-primary1;
+
+                    &:focus {
+                        outline: 0;
+                        border: 3px solid #93BBF9;
+                    }
+                }
+
+                & .error {
+                    border: 3px solid #E06D6D;
+
+                    &:focus {
+                        outline: 0;
+                        border: 3px solid #E06D6D;
+                    }
+                }
+
+                & .search-select,
+                select {
+                    /*移除箭頭樣式*/
+                    appearance: none;
+                    -moz-appearance: none;
+                    -webkit-appearance: none;
+                    /*改變右邊箭頭樣式*/
+                    background: url('../img/svg/drop\ down.svg') calc(100% - 16px) 50% no-repeat transparent;
+                }
+
+                & .font-caption {
+                    color: #E06D6D;
+                    margin-top: 4px;
+                }
+
+                /*search-select*/
+                & .options {
+                    width: 100%;
+                    max-height: 184px;
+                    border: 1px solid $text-color6;
+                    box-shadow: 2px 2px 5px $text-color7;
+                    background-color: $color-white;
+                    position: absolute;
+                    top: calc(0px + 90px);
+                    z-index: 10;
+                    overflow-y: scroll;
+
+                    div {
+                        padding: 4px 16px;
+                        margin: 0;
+                        @include font(16px, 400, 180%, normal);
+                    }
+                }
+
+                & .filterData-null {
+                    color: $text-color6;
+                }
+
+                & .current-option {
+                    color: $color-white;
+                    background-color: #93BBF9;
+                }
+
+                & .inactive {
+                    display: none;
+                }
+
+                & .active {
+                    display: block;
+                }
+            }
+
+            div:nth-last-child(1) {
+                margin-bottom: 0;
+            }
+        }
+
+        & .default-btn {
+            @include button($palette-primary2) {
+                box-shadow: 0px 4px 10px rgba(40, 35, 35, 0.35), 0px -4px 10px rgba(255, 255, 255, 0.9);
+                color: $color-white;
+                margin-top: 42px;
+                width: 200px;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                &:active {
+                    background-color: #D3A995;
+                }
+
+            }
+
+
+            flex-direction: row;
+
+            img {
+                margin-right: 16px;
+            }
+        }
+
+        & .successBtn {
+            color: #E6FFB1;
+        }
+
+        & .failureBtn {
+            color: #FFE3E3;
+        }
+
+        & .submit-failure-group {
+            @include flex;
+
+            p {
+                margin-top: 8px;
+                color: #E06D6D;
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import './mixin';
+@import './variables';
+
+/*raffle gift*/
+.raffle-gift-wrapper {
+    @include flex;
+    background-color: $palette-primary4;
+    background-image: url('../img/svg/抽獎沙子.svg');
+    // background-repeat: no-repeat;
+    background-position: center center;
+    padding: 40px 24px;
+
+    & .raffle-gift-group {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 32px;
+        grid-row-gap: 32px;
+
+        @include mobile {
+            grid-column-gap: 16px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        & .raffle-gift-item {
+            position: relative;
+            // max-width: 178px;
+            // width: 100%;
+            // width: 178px;
+            border-bottom: 9px solid $text-color9;
+            border-radius: 20px;
+            background-color: $color-white;
+            text-align: right;
+
+            div {
+                @include flex;
+                position: absolute;
+                background-repeat: no-repeat;
+                top: 0;
+                right: 0;
+                transform: translate(-85%, -24px);
+
+                span {
+                    @include font(16.92px, 700, 125%, normal);
+                    color: $color-white;
+                }
+            }
+
+            & .greenStyleDiv {
+                // display: flex;
+                // justify-content: center;
+                padding-bottom: 12.6px;
+                background-image: url('../img/svg/certificateA.svg');
+                width: 65.34px;
+                height: 78px;
+            }
+
+            & .blueStyleDiv {
+                // @include flex;
+                background-image: url('../img/svg/certificateD.svg');
+                width: 65px;
+                height: 65px;
+            }
+
+            p {
+                padding: 3px 10px;
+                margin-right: 8px;
+                margin-top: 18px;
+                border-radius: 50px;
+                box-sizing: border-box;
+                display: inline-block;
+                background-color: $text-color10;
+            }
+
+            & .greenStyleNum {
+                border: 1px solid $palette-primary6;
+                color: $palette-primary6;
+            }
+
+            & .blueStyleNum {
+                border: 1px solid $palette-primary7;
+                color: $palette-primary7;
+            }
+
+            h5 {
+                @include flex;
+                height: 44px;
+                padding: 0 10px;
+                text-align: center;
+            }
+
+            & .greenStyleH5 {
+                margin-top: 17px;
+                margin-bottom: 10px;
+                color: $palette-primary6;
+            }
+
+            & .blueStyleH5 {
+                margin-top: 11px;
+                margin-bottom: 16px;
+                color: $palette-primary7;
+            }
+        }
+    }
+}
