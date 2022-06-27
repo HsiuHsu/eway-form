@@ -4,6 +4,8 @@
 
 eway front-end test
 
+Deployed URL: [https://hsiuhsu.github.io/eway-form/](https://hsiuhsu.github.io/eway-form/).
+
 ## Tech Stack
 
 React.js, Typescript, Scss
